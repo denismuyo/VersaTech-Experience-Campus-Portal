@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Web Development Bootcamp – VersaTech Experience Campus</title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <style>
+    .video-container {
+      margin: 28px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(6,182,212,0.2);
+      background: #000;
+    }
+    .video-container iframe {
+      display: block;
+    }
+    .why-matters {
+      background: rgba(6,182,212,0.07);
+      border-left: 3px solid var(--cyan, #06b6d4);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 18px 0 22px;
+    }
+    .why-matters strong {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--cyan, #06b6d4);
+      margin-bottom: 6px;
+    }
+    .real-world-box {
+      background: rgba(37,99,235,0.07);
+      border: 1px solid rgba(37,99,235,0.2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 18px 0;
+    }
+    .real-world-box strong {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #60a5fa;
+      margin-bottom: 6px;
+    }
+    .challenge-box {
+      background: rgba(245,158,11,0.07);
+      border: 1px solid rgba(245,158,11,0.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 18px 0;
+    }
+    .challenge-box strong {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #f59e0b;
+      margin-bottom: 6px;
+    }
+    .mistakes-box {
+      background: rgba(239,68,68,0.06);
+      border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 18px 0;
+    }
+    .mistakes-box strong {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #f87171;
+      margin-bottom: 6px;
+    }
+    .mistakes-box ul, .challenge-box ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cyan, #06b6d4);
+      margin: 24px 0 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(6,182,212,0.15);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NETWORK BG -->
+<div class="network-bg" style="opacity:0.4;">
+  <canvas id="network-canvas"></canvas>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="../../index.html" class="nav-logo">
+    <div class="logo-mark">VTX</div>
+    <div class="logo-text">VersaTech<span>Experience Campus</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../../index.html">← Campus Home</a></li>
+    <li><a href="#" style="color:var(--cyan);">Python Bootcamp</a></li>
+  </ul>
+</nav>
+
+<!-- COURSE LAYOUT -->
+<div class="course-layout">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="course-sidebar">
+    <div class="sidebar-header">
+      <h2>Python Web Dev Bootcamp</h2>
+      <p>10 Modules · Beginner → Intermediate</p>
+    </div>
+
+    <div class="progress-section">
+      <div class="progress-label">
+        <span>Course Progress</span>
+        <strong class="progress-pct">0%</strong>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="module-nav-item active" data-index="0">
+        <div class="module-num">01</div>
+        Python Fundamentals
+      </div>
+      <div class="module-nav-item" data-index="1">
+        <div class="module-num">02</div>
+        User Input
+      </div>
+      <div class="module-nav-item" data-index="2">
+        <div class="module-num">03</div>
+        Control Flow
+      </div>
+      <div class="module-nav-item" data-index="3">
+        <div class="module-num">04</div>
+        Loops
+      </div>
+      <div class="module-nav-item" data-index="4">
+        <div class="module-num">05</div>
+        Functions
+      </div>
+      <div class="module-nav-item" data-index="5">
+        <div class="module-num">06</div>
+        Lists & Dictionaries
+      </div>
+      <div class="module-nav-item" data-index="6">
+        <div class="module-num">07</div>
+        OOP
+      </div>
+      <div class="module-nav-item" data-index="7">
+        <div class="module-num">08</div>
+        Python for Web Dev
+      </div>
+      <div class="module-nav-item" data-index="8">
+        <div class="module-num">09</div>
+        APIs
+      </div>
+      <div class="module-nav-item" data-index="9">
+        <div class="module-num">10</div>
+        Final Project
+      </div>
+    </nav>
+  </aside>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="course-main">
+
+    <div class="lesson-header">
+      <div class="lesson-tag">// python_web_development_bootcamp</div>
+      <h1>Python Web Development<br/>Bootcamp</h1>
+      <p>A complete beginner-to-web-developer journey in 10 structured modules. Build real projects, submit tasks, and request live support at any step.</p>
+    </div>
+<!-- COURSE INTRO -->
+<div class="module-accordion active">
+  <div class="accordion-header">
+    <div class="accordion-title-group">
+      <div class="accordion-num">00</div>
+      <div>
+        <div class="accordion-title">Course Introduction</div>
+        <div class="accordion-subtitle">Overview · Structure · Expectations</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-body open">
+    <div class="lesson-content">
+
+      <div class="why-matters">
+        <strong>⚡ Start Here</strong>
+        This introduction will guide you through how this program works, what you will learn, and how to get the best results from your training.
+      </div>
+
+      <div class="section-label">Watch First</div>
+
+    </div>
+
+    <div class="video-container">
+      <iframe width="100%" height="400"
+        src="https://www.youtube.com/embed/cK9p0rwxPFw"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</div>
+
+<!-- SETUP MODULE -->
+<div class="module-accordion">
+  <div class="accordion-header">
+    <div class="accordion-title-group">
+      <div class="accordion-num">00</div>
+      <div>
+        <div class="accordion-title">Environment Setup</div>
+        <div class="accordion-subtitle">Install Python · Install PyCharm</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-body">
+    <div class="lesson-content">
+
+      <div class="why-matters">
+        <strong>⚡ Why This Matters</strong>
+        Before writing any code, you need the right tools. This setup ensures your environment is ready for coding, testing, and building real applications.
+      </div>
+
+      <div class="section-label">Guided Setup</div>
+
+      <p>Follow the video below to install PyCharm and set up your development environment. Pause and complete each step before moving forward.</p>
+
+    </div>
+
+    <div class="video-container">
+      <iframe width="100%" height="400"
+        src="https://www.youtube.com/embed/vfUV4nAfMEc"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</div>
+    <!-- ══════════════════════════════════ -->
+    <!--  MODULE 1 – Python Fundamentals   -->
+    <!-- ══════════════════════════════════ -->
+    <div class="module-accordion active" id="module-1">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">01</div>
+          <div>
+            <div class="accordion-title">Python Fundamentals</div>
+            <div class="accordion-subtitle">Installing Python · Variables · Data Types · print()</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body open">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            Every program you will ever write in Python starts here. Variables store information. Data types tell Python <em>what kind</em> of information it is. And <code style="color:var(--cyan);font-family:var(--font-mono)">print()</code> lets you see what your program is doing. These three concepts are the foundation of everything — skip them and nothing else makes sense.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>What Is Python?</h3>
+          <p>Python is a beginner-friendly programming language that reads almost like plain English. It is used everywhere — from websites and mobile apps to artificial intelligence and data analysis. Big companies like Google, Netflix, and Instagram use Python in their backend systems.</p>
+
+          <h3>Variables — Your Program's Memory</h3>
+          <p>A <strong>variable</strong> is like a labelled box that holds a value. You give the box a name, and Python remembers what's inside it for you. You can change what's in the box at any time.</p>
+
+          <div class="code-block">
+            <span class="code-label">python</span>
+<span class="cm"># Creating variables – just write: name = value</span>
+name = <span class="str">"Denis"</span>         <span class="cm"># a String (text)</span>
+age = <span class="num">25</span>              <span class="cm"># an Integer (whole number)</span>
+height = <span class="num">1.75</span>         <span class="cm"># a Float (decimal number)</span>
+is_enrolled = <span class="kw">True</span>   <span class="cm"># a Boolean (True or False only)</span>
+
+<span class="cm"># Python figures out the type automatically – no need to declare it</span>
+<span class="fn">print</span>(<span class="fn">type</span>(name))     <span class="cm"># &lt;class 'str'&gt;</span>
+<span class="fn">print</span>(<span class="fn">type</span>(age))      <span class="cm"># &lt;class 'int'&gt;</span>
+          </div>
+
+          <h3>The Four Core Data Types</h3>
+          <ul>
+            <li><strong>String (str)</strong> — Text surrounded by quotes. Example: <code style="color:var(--cyan);font-family:var(--font-mono)">"Hello"</code>, <code style="color:var(--cyan);font-family:var(--font-mono)">"Narok"</code></li>
+            <li><strong>Integer (int)</strong> — Whole numbers, no decimals. Example: <code style="color:var(--cyan);font-family:var(--font-mono)">42</code>, <code style="color:var(--cyan);font-family:var(--font-mono)">-7</code></li>
+            <li><strong>Float (float)</strong> — Numbers with a decimal point. Example: <code style="color:var(--cyan);font-family:var(--font-mono)">3.14</code>, <code style="color:var(--cyan);font-family:var(--font-mono)">99.9</code></li>
+            <li><strong>Boolean (bool)</strong> — Only two possible values: <code style="color:var(--cyan);font-family:var(--font-mono)">True</code> or <code style="color:var(--cyan);font-family:var(--font-mono)">False</code></li>
+          </ul>
+
+          <h3>Printing Output — Talking to the User</h3>
+          <p>The <code style="color:var(--cyan);font-family:var(--font-mono)">print()</code> function displays information on the screen. It's the most important tool for debugging and showing results. Notice the three ways to combine variables with text:</p>
+
+          <div class="code-block">
+            <span class="code-label">python – three ways to print variables</span>
+name = <span class="str">"Denis"</span>
+age = <span class="num">25</span>
+city = <span class="str">"Narok"</span>
+
+<span class="cm"># Method 1: Comma-separated (adds a space automatically)</span>
+<span class="fn">print</span>(<span class="str">"Hello, my name is"</span>, name, <span class="str">"and I am"</span>, age)
+
+<span class="cm"># Method 2: String concatenation (joining with +)</span>
+<span class="fn">print</span>(<span class="str">"I live in "</span> + city + <span class="str">"."</span>)
+
+<span class="cm"># Method 3: f-string (most modern, most readable – USE THIS)</span>
+<span class="fn">print</span>(<span class="str">f"Hello! I am {name}, {age} years old, from {city}."</span>)
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When you open the Safaricom app and it says "Welcome back, Denis!" — that is a variable. The app stores your name in a variable when you register, and then retrieves it every time you log in to personalise your experience.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Create 4 variables: your name (string), your age (int), your GPA (float), and whether you are a student (bool)</li>
+              <li>Print a single f-string sentence that uses all four variables</li>
+              <li>Use <code style="color:var(--cyan);font-family:var(--font-mono)">type()</code> to print the type of each variable</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Forgetting quotes around strings:</strong> <code style="color:#f87171;font-family:var(--font-mono)">name = Denis</code> causes an error. Always use: <code style="color:var(--cyan);font-family:var(--font-mono)">name = "Denis"</code></li>
+              <li><strong>Mixing types in + concatenation:</strong> <code style="color:#f87171;font-family:var(--font-mono)">"Age: " + 25</code> crashes. Use f-strings instead: <code style="color:var(--cyan);font-family:var(--font-mono)">f"Age: {25}"</code></li>
+              <li><strong>Capitalising booleans wrong:</strong> Python requires <code style="color:var(--cyan);font-family:var(--font-mono)">True</code> and <code style="color:var(--cyan);font-family:var(--font-mono)">False</code> — not <code style="color:#f87171;font-family:var(--font-mono)">true</code> or <code style="color:#f87171;font-family:var(--font-mono)">TRUE</code></li>
+              <li><strong>Spaces in variable names:</strong> <code style="color:#f87171;font-family:var(--font-mono)">my name = "Denis"</code> is invalid. Use underscores: <code style="color:var(--cyan);font-family:var(--font-mono)">my_name = "Denis"</code></li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/LKFrQXaoSMQ"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Task 1
+          </div>
+          <p>Write a Python program that creates variables for your name, age, and home city. Print a sentence using all three variables. Example: <em style="color:var(--text-primary)">"Hello! I am Denis, 25 years old, from Narok."</em></p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task" onclick="viewTask(1)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Task
+          </a>
+          <a href="https://forms.google.com/vtx-python-task1" target="_blank" class="action-btn submit-task">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            Submit Task
+          </a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%201%20-%20Python%20Fundamentals" target="_blank" class="action-btn recap-class">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Ask for Live Recap Class
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 2 – USER INPUT -->
+    <div class="module-accordion" id="module-2">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">02</div>
+          <div>
+            <div class="accordion-title">User Input</div>
+            <div class="accordion-subtitle">input() · Strings · Type Conversion</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            A program that can't talk to users is useless. Every app — from M-Pesa to Instagram — needs to take input from real people. This module teaches you how to make your programs interactive, so users can type their own data and get personalised responses.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>The input() Function</h3>
+          <p>The <code style="color:var(--cyan);font-family:var(--font-mono)">input()</code> function pauses your program and waits for the user to type something. Whatever the user types gets stored in a variable. The text inside the parentheses is the <strong>prompt</strong> — what the user sees before they type.</p>
+
+          <div class="code-block">
+            <span class="code-label">python</span>
+<span class="cm"># Basic input – always returns a STRING</span>
+name = <span class="fn">input</span>(<span class="str">"What is your name? "</span>)
+<span class="fn">print</span>(<span class="str">f"Welcome, {name}!"</span>)
+          </div>
+
+          <h3>⚠️ Important: input() Always Returns a String</h3>
+          <p>This is the most important rule in this module. Even if the user types a number, Python treats it as text. You <strong>must convert it</strong> before doing any maths.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – type conversion</span>
+<span class="cm"># WRONG – this will crash when you try to add 1</span>
+age = <span class="fn">input</span>(<span class="str">"How old are you? "</span>)
+<span class="fn">print</span>(age + <span class="num">1</span>)  <span class="cm"># ❌ TypeError: can't add str + int</span>
+
+<span class="cm"># CORRECT – convert to integer first</span>
+age = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"How old are you? "</span>))
+<span class="fn">print</span>(<span class="str">f"Next year you will be {age + 1}."</span>)  <span class="cm"># ✅</span> <br>
+
+<span class="cm"># Convert to float for decimal numbers</span>
+price = <span class="fn">float</span>(<span class="fn">input</span>(<span class="str">"Enter price in KSh: "</span>))
+<span class="fn">print</span>(<span class="str">f"With 16% VAT: KSh {price * 1.16:.2f}"</span>)
+          </div>
+
+          <h3>String Manipulation</h3>
+          <p>Strings come with built-in tools (called methods) that let you transform them. These are essential for cleaning user input before using it.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – useful string methods</span>
+name = <span class="fn">input</span>(<span class="str">"Enter your name: "</span>)  <span class="cm"># user types: "  denis  "</span>
+
+<span class="fn">print</span>(name.<span class="fn">strip</span>())       <span class="cm"># "denis"     → removes spaces</span>
+<span class="fn">print</span>(name.<span class="fn">title</span>())       <span class="cm"># "Denis"     → capitalises first letter</span>
+<span class="fn">print</span>(name.<span class="fn">upper</span>())       <span class="cm"># "DENIS"     → all caps</span>
+<span class="fn">print</span>(name.<span class="fn">lower</span>())       <span class="cm"># "denis"     → all lowercase</span>
+<span class="fn">print</span>(<span class="fn">len</span>(name.<span class="fn">strip</span>())) <span class="cm"># 5           → number of characters</span>
+
+<span class="cm"># Chain methods together</span>
+clean_name = name.<span class="fn">strip</span>().<span class="fn">title</span>()
+<span class="fn">print</span>(<span class="str">f"Hello, {clean_name}!"</span>)
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When you register on a website and type your email address, the system runs <code style="color:var(--cyan);font-family:var(--font-mono)">.strip().lower()</code> on it behind the scenes. This makes sure "Denis@Gmail.com" and "denis@gmail.com" are treated as the same email — preventing duplicate accounts.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Ask the user for their name, age, and a product price</li>
+              <li>Calculate and print: their age next year, and the price with 16% VAT added</li>
+              <li>Use <code style="color:var(--cyan);font-family:var(--font-mono)">.title()</code> on their name so it's always properly capitalised</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Forgetting to convert input:</strong> Always wrap numeric input with <code style="color:var(--cyan);font-family:var(--font-mono)">int()</code> or <code style="color:var(--cyan);font-family:var(--font-mono)">float()</code></li>
+              <li><strong>Converting text with int():</strong> <code style="color:#f87171;font-family:var(--font-mono)">int("hello")</code> crashes — only convert when you're sure the user typed a number</li>
+              <li><strong>Forgetting the space in the prompt:</strong> Write <code style="color:var(--cyan);font-family:var(--font-mono)">"Enter name: "</code> (with a space before the closing quote) so the cursor appears after the colon</li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/DB9Cq6TSTuQ"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            Task 2
+          </div>
+          <p>Create a program that asks the user for their name and favourite city, then prints: <em style="color:var(--text-primary)">"Hello [name]! [City] sounds like a wonderful place to live."</em></p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task" onclick="viewTask(2)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Task
+          </a>
+          <a href="https://forms.google.com/vtx-python-task2" target="_blank" class="action-btn submit-task">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            Submit Task
+          </a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%202%20-%20User%20Input" target="_blank" class="action-btn recap-class">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Ask for Live Recap Class
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 3 – CONTROL FLOW -->
+    <div class="module-accordion" id="module-3">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">03</div>
+          <div>
+            <div class="accordion-title">Control Flow</div>
+            <div class="accordion-subtitle">if/elif/else · Comparison Operators · Boolean Logic</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            Right now your programs run top to bottom, doing exactly the same thing every time. Control flow gives your program a <em>brain</em> — the ability to make decisions. This is what separates a script from a real application. Every login system, every quiz, every M-Pesa transaction check uses control flow.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>if / elif / else — Teaching Python to Decide</h3>
+          <p>Think of <code style="color:var(--cyan);font-family:var(--font-mono)">if</code> like a fork in the road. Python checks a condition — if it's true, it takes one path; if not, it can check another condition (<code style="color:var(--cyan);font-family:var(--font-mono)">elif</code>) or fall back to a default (<code style="color:var(--cyan);font-family:var(--font-mono)">else</code>).</p>
+
+          <div class="code-block">
+            <span class="code-label">python – structure of an if statement</span>
+<span class="cm"># IMPORTANT: Indentation (4 spaces) tells Python what's inside the if block</span>
+score = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"Enter your exam score: "</span>))
+
+<span class="kw">if</span> score >= <span class="num">80</span>:
+    <span class="fn">print</span>(<span class="str">"Distinction 🏆"</span>)
+<span class="kw">elif</span> score >= <span class="num">60</span>:
+    <span class="fn">print</span>(<span class="str">"Credit ✓"</span>)
+<span class="kw">elif</span> score >= <span class="num">40</span>:
+    <span class="fn">print</span>(<span class="str">"Pass"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Below pass – keep going!"</span>)
+          </div>
+
+          <h3>Comparison Operators</h3>
+          <p>These are the tools Python uses to compare values and produce a <code style="color:var(--cyan);font-family:var(--font-mono)">True</code> or <code style="color:var(--cyan);font-family:var(--font-mono)">False</code> result:</p>
+          <ul>
+            <li><code style="color:var(--cyan);font-family:var(--font-mono)">==</code> — Equal to (note: two equals signs, not one)</li>
+            <li><code style="color:var(--cyan);font-family:var(--font-mono)">!=</code> — Not equal to</li>
+            <li><code style="color:var(--cyan);font-family:var(--font-mono)">&gt;</code> / <code style="color:var(--cyan);font-family:var(--font-mono)">&lt;</code> — Greater than / Less than</li>
+            <li><code style="color:var(--cyan);font-family:var(--font-mono)">&gt;=</code> / <code style="color:var(--cyan);font-family:var(--font-mono)">&lt;=</code> — Greater than or equal / Less than or equal</li>
+          </ul>
+
+          <h3>Boolean Logic — Combining Conditions</h3>
+          <p>Use <code style="color:var(--cyan);font-family:var(--font-mono)">and</code>, <code style="color:var(--cyan);font-family:var(--font-mono)">or</code>, and <code style="color:var(--cyan);font-family:var(--font-mono)">not</code> to combine multiple conditions into one check:</p>
+
+          <div class="code-block">
+            <span class="code-label">python – boolean logic in action</span>
+age = <span class="fn">int</span>(<span class="fn">input</span>(<span class="str">"Enter age: "</span>))
+has_id = <span class="fn">input</span>(<span class="str">"Do you have ID? (yes/no): "</span>).<span class="fn">lower</span>() == <span class="str">"yes"</span>
+
+<span class="cm"># AND – both conditions must be True</span>
+<span class="kw">if</span> age >= <span class="num">18</span> <span class="kw">and</span> has_id:
+    <span class="fn">print</span>(<span class="str">"Access granted ✅"</span>)
+<span class="kw">elif</span> age >= <span class="num">18</span> <span class="kw">and not</span> has_id:
+    <span class="fn">print</span>(<span class="str">"You are old enough but please bring your ID."</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">"Sorry, you must be 18+ to enter."</span>)
+
+<span class="cm"># OR – at least one condition must be True</span>
+day = <span class="fn">input</span>(<span class="str">"Enter today: "</span>)
+<span class="kw">if</span> day == <span class="str">"Saturday"</span> <span class="kw">or</span> day == <span class="str">"Sunday"</span>:
+    <span class="fn">print</span>(<span class="str">"It's the weekend! 🎉"</span>)
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When you try to withdraw money from an ATM, the bank runs control flow: <em>if</em> your PIN is correct <em>and</em> your balance is sufficient <em>and</em> your daily limit hasn't been reached, then approve the withdrawal — <em>else</em> show an error. That's nested boolean logic with <code style="color:var(--cyan);font-family:var(--font-mono)">and</code> conditions, exactly what you just learned.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Ask the user for a number and tell them if it's positive, negative, or zero</li>
+              <li>Ask for two numbers and print which one is larger (or if they're equal)</li>
+              <li>Build a simple login: ask for a password, and print "Access granted" only if it matches <code style="color:var(--cyan);font-family:var(--font-mono)">"vtx2025"</code></li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Using = instead of ==:</strong> <code style="color:#f87171;font-family:var(--font-mono)">if name = "Denis"</code> is assignment, not comparison. Always use <code style="color:var(--cyan);font-family:var(--font-mono)">==</code></li>
+              <li><strong>Wrong indentation:</strong> Python uses 4 spaces (or 1 tab) for indentation. Mixing them causes errors</li>
+              <li><strong>Forgetting the colon:</strong> Every <code style="color:var(--cyan);font-family:var(--font-mono)">if</code>, <code style="color:var(--cyan);font-family:var(--font-mono)">elif</code>, and <code style="color:var(--cyan);font-family:var(--font-mono)">else</code> line must end with <code style="color:var(--cyan);font-family:var(--font-mono)">:</code></li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/FvMPfrgGeKs"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 3</div>
+          <p>Create an age checker that asks the user's age and determines if they are a child (under 13), teenager (13–17), or adult (18+). Include a message for each category.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task3" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%203%20-%20Control%20Flow" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 4 – LOOPS -->
+    <div class="module-accordion" id="module-4">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">04</div>
+          <div>
+            <div class="accordion-title">Loops</div>
+            <div class="accordion-subtitle">for loops · while loops · Iteration</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            Without loops, if you wanted to print 1,000 numbers, you'd need 1,000 lines of code. Loops let you repeat actions automatically. They are the engine behind sending bulk SMS alerts, processing rows in a spreadsheet, displaying product listings on a website — anything that involves repeating a task.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>The for Loop — When You Know How Many Times</h3>
+          <p>A <code style="color:var(--cyan);font-family:var(--font-mono)">for</code> loop repeats for each item in a sequence. Use it when you know exactly how many repetitions you need.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – for loop with range()</span>
+<span class="cm"># range(start, stop, step) – stop is NOT included</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="num">6</span>):
+    <span class="fn">print</span>(<span class="str">f"Counting: {i}"</span>)   <span class="cm"># prints 1, 2, 3, 4, 5</span>
+
+<span class="cm"># Even numbers only (step = 2)</span>
+<span class="kw">for</span> n <span class="kw">in</span> <span class="fn">range</span>(<span class="num">2</span>, <span class="num">21</span>, <span class="num">2</span>):
+    <span class="fn">print</span>(n)  <span class="cm"># 2, 4, 6, ... 20</span>
+
+<span class="cm"># Loop through a list of items</span>
+students = [<span class="str">"Denis"</span>, <span class="str">"Amina"</span>, <span class="str">"Brian"</span>, <span class="str">"Fatuma"</span>]
+<span class="kw">for</span> student <span class="kw">in</span> students:
+    <span class="fn">print</span>(<span class="str">f"Welcome to class, {student}! 👋"</span>)
+          </div>
+
+          <h3>The while Loop — When You Don't Know How Many Times</h3>
+          <p>A <code style="color:var(--cyan);font-family:var(--font-mono)">while</code> loop keeps running as long as a condition is <code style="color:var(--cyan);font-family:var(--font-mono)">True</code>. It's perfect for things like "keep asking until the user gives a valid answer."</p>
+
+          <div class="code-block">
+            <span class="code-label">python – while loop</span>
+<span class="cm"># Count down from 5</span>
+count = <span class="num">5</span>
+<span class="kw">while</span> count > <span class="num">0</span>:
+    <span class="fn">print</span>(<span class="str">f"Launching in {count}..."</span>)
+    count -= <span class="num">1</span>   <span class="cm"># CRITICAL: always update your counter or you get an infinite loop</span>
+<span class="fn">print</span>(<span class="str">"🚀 Lift off!"</span>)
+
+<span class="cm"># Keep asking until the user gives a valid answer</span>
+answer = <span class="str">""</span>
+<span class="kw">while</span> answer != <span class="str">"yes"</span> <span class="kw">and</span> answer != <span class="str">"no"</span>:
+    answer = <span class="fn">input</span>(<span class="str">"Are you ready? (yes/no): "</span>).<span class="fn">lower</span>()
+<span class="fn">print</span>(<span class="str">f"You said: {answer}"</span>)
+          </div>
+
+          <h3>break and continue — Controlling Loop Flow</h3>
+
+          <div class="code-block">
+            <span class="code-label">python – break and continue</span>
+<span class="cm"># break – exit the loop immediately</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="num">10</span>):
+    <span class="kw">if</span> i == <span class="num">5</span>:
+        <span class="kw">break</span>   <span class="cm"># stops at 5 – prints 1, 2, 3, 4</span>
+    <span class="fn">print</span>(i)
+
+<span class="cm"># continue – skip this iteration, go to next</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, <span class="num">10</span>):
+    <span class="kw">if</span> i % <span class="num">2</span> == <span class="num">0</span>:
+        <span class="kw">continue</span>   <span class="cm"># skip even numbers</span>
+    <span class="fn">print</span>(i)       <span class="cm"># prints 1, 3, 5, 7, 9</span>
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When an e-commerce site like Jumia loads its product page, it loops through a database of hundreds of products and creates an HTML card for each one. That's a <code style="color:var(--cyan);font-family:var(--font-mono)">for</code> loop in action — iterating over a list and performing an action (creating a card) for each item.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Print a multiplication table for 7 (7×1 through 7×10)</li>
+              <li>Write a while loop that keeps asking for a number until the user types 0, then print the sum of all numbers entered</li>
+              <li>Print all numbers from 1 to 50 that are divisible by both 3 and 5</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Infinite while loops:</strong> Always make sure the condition eventually becomes False. Always update your variable inside the loop</li>
+              <li><strong>Off-by-one errors with range():</strong> <code style="color:var(--cyan);font-family:var(--font-mono)">range(1, 10)</code> gives 1–9, not 1–10. The stop value is excluded</li>
+              <li><strong>Modifying a list while looping over it:</strong> This causes unpredictable behaviour. Loop over a copy instead</li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/6iF8Xb7Z3wQ"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 4</div>
+          <p>Write a program that prints numbers from 1 to 10. Then write a second loop that prints only even numbers from 1 to 20.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task4" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%204%20-%20Loops" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 5 – FUNCTIONS -->
+    <div class="module-accordion" id="module-5">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">05</div>
+          <div>
+            <div class="accordion-title">Functions</div>
+            <div class="accordion-subtitle">def · Parameters · Return Values</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            Without functions, every time you need the same block of code you'd copy and paste it. Functions let you write code once and reuse it everywhere. Professional developers think in functions — every feature in a real app is a collection of small, focused functions working together.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>Defining and Calling Functions</h3>
+          <p>Use the <code style="color:var(--cyan);font-family:var(--font-mono)">def</code> keyword to define a function. Give it a clear, descriptive name. Call it by writing the name followed by parentheses. Nothing inside the function runs until you call it.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – anatomy of a function</span>
+<span class="cm"># DEFINE: create the function (runs nothing yet)</span>
+<span class="kw">def</span> <span class="fn">greet_user</span>(name):
+    message = <span class="str">f"Hello, {name}! Welcome to VersaTech Campus."</span>
+    <span class="kw">return</span> message
+
+<span class="cm"># CALL: execute the function with an argument</span>
+result = <span class="fn">greet_user</span>(<span class="str">"Denis"</span>)
+<span class="fn">print</span>(result)
+
+<span class="cm"># Call it again with different input – no rewriting needed!</span>
+<span class="fn">print</span>(<span class="fn">greet_user</span>(<span class="str">"Amina"</span>))
+<span class="fn">print</span>(<span class="fn">greet_user</span>(<span class="str">"Brian"</span>))
+          </div>
+
+          <h3>Parameters, Arguments, and Default Values</h3>
+
+          <div class="code-block">
+            <span class="code-label">python – parameters and defaults</span>
+<span class="cm"># Default parameter – used when caller doesn't provide a value</span>
+<span class="kw">def</span> <span class="fn">greet</span>(name, language=<span class="str">"English"</span>):
+    <span class="kw">if</span> language == <span class="str">"Swahili"</span>:
+        <span class="kw">return</span> <span class="str">f"Habari, {name}!"</span>
+    <span class="kw">elif</span> language == <span class="str">"Maa"</span>:
+        <span class="kw">return</span> <span class="str">f"Sopa, {name}!"</span>
+    <span class="kw">return</span> <span class="str">f"Hello, {name}!"</span>
+
+<span class="fn">print</span>(<span class="fn">greet</span>(<span class="str">"Denis"</span>))              <span class="cm"># uses default → "Hello, Denis!"</span>
+<span class="fn">print</span>(<span class="fn">greet</span>(<span class="str">"Amina"</span>, <span class="str">"Swahili"</span>))  <span class="cm"># → "Habari, Amina!"</span>
+
+<span class="cm"># Multiple return values</span>
+<span class="kw">def</span> <span class="fn">rectangle_stats</span>(w, h):
+    area = w * h
+    perimeter = <span class="num">2</span> * (w + h)
+    <span class="kw">return</span> area, perimeter
+
+a, p = <span class="fn">rectangle_stats</span>(<span class="num">10</span>, <span class="num">5</span>)
+<span class="fn">print</span>(<span class="str">f"Area: {a} | Perimeter: {p}"</span>)
+          </div>
+
+          <h3>Variable Scope — Local vs Global</h3>
+
+          <div class="code-block">
+            <span class="code-label">python – understanding scope</span>
+company = <span class="str">"VersaTech"</span>  <span class="cm"># Global – visible everywhere</span>
+
+<span class="kw">def</span> <span class="fn">show_info</span>():
+    department = <span class="str">"Engineering"</span>  <span class="cm"># Local – only exists inside this function</span>
+    <span class="fn">print</span>(<span class="str">f"{company} – {department}"</span>)  <span class="cm"># can see global company</span>
+
+<span class="fn">show_info</span>()
+<span class="cm"># print(department)  ← ❌ ERROR: department doesn't exist outside the function</span>
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            Every time you send an M-Pesa payment, a function runs behind the scenes: it takes your phone number, recipient number, and amount as parameters, checks your balance, deducts the fee, sends the money, and returns a confirmation message. One function, called millions of times a day with different inputs.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Write a function <code style="color:var(--cyan);font-family:var(--font-mono)">calculate_mpesa_fee(amount)</code> that returns the M-Pesa transaction fee (you can make up a simple rule like: fee = amount × 0.015)</li>
+              <li>Write a function <code style="color:var(--cyan);font-family:var(--font-mono)">is_even(number)</code> that returns <code style="color:var(--cyan);font-family:var(--font-mono)">True</code> if the number is even, <code style="color:var(--cyan);font-family:var(--font-mono)">False</code> if not</li>
+              <li>Call both functions with 5 different inputs each</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Forgetting to return:</strong> A function without <code style="color:var(--cyan);font-family:var(--font-mono)">return</code> returns <code style="color:var(--cyan);font-family:var(--font-mono)">None</code>. If you need a value back, always use <code style="color:var(--cyan);font-family:var(--font-mono)">return</code></li>
+              <li><strong>Calling before defining:</strong> In Python, you must define a function before calling it (unless you're inside another function)</li>
+              <li><strong>Trying to use a local variable outside the function:</strong> Variables created inside a function only exist there</li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/9Os0o3wzS_I"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 5</div>
+          <p>Create a function called <code style="color:var(--cyan);font-family:var(--font-mono)">add_numbers(a, b)</code> that returns the sum. Then create a function that calculates the area of a rectangle. Call both functions with different inputs.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task5" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%205%20-%20Functions" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 6 – LISTS & DICTS -->
+    <div class="module-accordion" id="module-6">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">06</div>
+          <div>
+            <div class="accordion-title">Lists & Dictionaries</div>
+            <div class="accordion-subtitle">Lists · Dicts · Accessing & Modifying Data</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            Variables hold one piece of data. But what if you need to store 1,000 student names, or an entire user profile? Lists and dictionaries are Python's primary data structures — they are the backbone of virtually every real application. Without them, you cannot build anything meaningful.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>Lists — Ordered Collections</h3>
+          <p>A list stores multiple values in a single variable, in a specific order. Each item has an index starting from <strong>0</strong> (not 1). Think of it like a numbered queue.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – working with lists</span>
+<span class="cm"># Create a list</span>
+students = [<span class="str">"Denis"</span>, <span class="str">"Amina"</span>, <span class="str">"Brian"</span>, <span class="str">"Fatuma"</span>]
+
+<span class="cm"># Access by index (starts at 0)</span>
+<span class="fn">print</span>(students[<span class="num">0</span>])   <span class="cm"># "Denis"</span>
+<span class="fn">print</span>(students[-<span class="num">1</span>])  <span class="cm"># "Fatuma" (last item)</span>
+
+<span class="cm"># Modify the list</span>
+students.<span class="fn">append</span>(<span class="str">"James"</span>)    <span class="cm"># add to end</span>
+students.<span class="fn">insert</span>(<span class="num">1</span>, <span class="str">"Eve"</span>)  <span class="cm"># insert at position 1</span>
+students.<span class="fn">remove</span>(<span class="str">"Brian"</span>)  <span class="cm"># remove by value</span>
+
+<span class="cm"># Useful list operations</span>
+<span class="fn">print</span>(<span class="fn">len</span>(students))       <span class="cm"># number of items</span>
+<span class="fn">print</span>(<span class="fn">sorted</span>(students))   <span class="cm"># alphabetical order</span>
+<span class="fn">print</span>(<span class="str">"Denis"</span> <span class="kw">in</span> students) <span class="cm"># True/False – check membership</span>
+
+<span class="cm"># List comprehension – elegant one-liner</span>
+scores = [<span class="num">45</span>, <span class="num">82</span>, <span class="num">31</span>, <span class="num">90</span>, <span class="num">67</span>]
+passed = [s <span class="kw">for</span> s <span class="kw">in</span> scores <span class="kw">if</span> s >= <span class="num">50</span>]
+<span class="fn">print</span>(passed)  <span class="cm"># [82, 90, 67]</span>
+          </div>
+
+          <h3>Dictionaries — Labelled Data</h3>
+          <p>A dictionary stores data as <strong>key-value pairs</strong> — like a contact book where you look someone up by name (the key) to get their phone number (the value). Order doesn't matter here; you look up by label, not by position.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – working with dictionaries</span>
+<span class="cm"># Create a dictionary</span>
+student = {
+    <span class="str">"name"</span>: <span class="str">"Denis"</span>,
+    <span class="str">"age"</span>: <span class="num">25</span>,
+    <span class="str">"course"</span>: <span class="str">"Python Bootcamp"</span>,
+    <span class="str">"enrolled"</span>: <span class="kw">True</span>
+}
+
+<span class="cm"># Access values by key</span>
+<span class="fn">print</span>(student[<span class="str">"name"</span>])     <span class="cm"># "Denis"</span>
+<span class="fn">print</span>(student.<span class="fn">get</span>(<span class="str">"grade"</span>, <span class="str">"N/A"</span>))  <span class="cm"># safe access – returns "N/A" if not found</span>
+
+<span class="cm"># Add/update/delete</span>
+student[<span class="str">"grade"</span>] = <span class="str">"A"</span>    <span class="cm"># add new key</span>
+student[<span class="str">"age"</span>] = <span class="num">26</span>        <span class="cm"># update existing key</span>
+<span class="kw">del</span> student[<span class="str">"enrolled"</span>]   <span class="cm"># delete a key</span>
+
+<span class="cm"># Loop through a dictionary</span>
+<span class="kw">for</span> key, value <span class="kw">in</span> student.<span class="fn">items</span>():
+    <span class="fn">print</span>(<span class="str">f"{key}: {value}"</span>)
+
+<span class="cm"># List of dictionaries – how real data looks</span>
+all_students = [
+    {<span class="str">"name"</span>: <span class="str">"Denis"</span>, <span class="str">"score"</span>: <span class="num">91</span>},
+    {<span class="str">"name"</span>: <span class="str">"Amina"</span>, <span class="str">"score"</span>: <span class="num">87</span>},
+    {<span class="str">"name"</span>: <span class="str">"Brian"</span>, <span class="str">"score"</span>: <span class="num">74</span>},
+]
+<span class="kw">for</span> s <span class="kw">in</span> all_students:
+    <span class="fn">print</span>(<span class="str">f"{s['name']} scored {s['score']}"</span>)
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When you look at your Jumia order history, the backend returns a list of dictionaries. Each order is a dictionary with keys like "order_id", "item_name", "price", "status", and "date". The app loops through the list and displays each dictionary's data as a card on your screen.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Create a list of your 5 favourite Kenyan cities and print them numbered (1. Narok, 2. Nairobi...)</li>
+              <li>Create a dictionary for a product: name, price, category, in_stock. Print all details</li>
+              <li>Create a list of 3 student dictionaries, then print only those with a score above 70</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Index out of range:</strong> A list with 5 items has indices 0–4. Accessing index 5 crashes the program</li>
+              <li><strong>KeyError with dictionaries:</strong> Accessing a key that doesn't exist crashes. Use <code style="color:var(--cyan);font-family:var(--font-mono)">.get("key", default)</code> for safety</li>
+              <li><strong>Confusing lists and dicts:</strong> Lists use numbers to access items (<code style="color:var(--cyan);font-family:var(--font-mono)">list[0]</code>). Dicts use keys (<code style="color:var(--cyan);font-family:var(--font-mono)">dict["name"]</code>)</li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/W8KRzm-HUcc"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 6</div>
+          <p>Create a list of 5 fruits and print them one by one using a loop. Then create a dictionary with your personal details (name, age, city, course) and print each key-value pair.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task6" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%206%20-%20Lists%20and%20Dictionaries" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 7 – OOP -->
+    <div class="module-accordion" id="module-7">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">07</div>
+          <div>
+            <div class="accordion-title">Object-Oriented Programming</div>
+            <div class="accordion-subtitle">Classes · Objects · Methods · Inheritance</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            As programs grow bigger, functions alone become messy. OOP lets you organise your code into self-contained <em>objects</em> — each combining its own data and behaviour. This is how every professional codebase is structured. Flask itself is OOP. Django is OOP. Understanding this module is the turning point from beginner to real developer.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>Classes vs Objects — Blueprint vs Building</h3>
+          <p>A <strong>class</strong> is like an architectural blueprint. An <strong>object</strong> is an actual building constructed from that blueprint. You define the class once, then create as many objects (instances) as you need.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – defining a class</span>
+<span class="kw">class</span> <span class="fn">Student</span>:
+    <span class="cm"># __init__ runs automatically when you create a new object</span>
+    <span class="kw">def</span> <span class="fn">__init__</span>(self, name, age, course):
+        self.name = name      <span class="cm"># 'self' refers to the specific object being created</span>
+        self.age = age
+        self.course = course
+        self.grades = []      <span class="cm"># starts empty for every student</span>
+
+    <span class="cm"># A method – a function that belongs to this class</span>
+    <span class="kw">def</span> <span class="fn">introduce</span>(self):
+        <span class="kw">return</span> <span class="str">f"Hi! I'm {self.name}, {self.age}, studying {self.course}."</span>
+
+    <span class="kw">def</span> <span class="fn">add_grade</span>(self, grade):
+        self.grades.<span class="fn">append</span>(grade)
+
+    <span class="kw">def</span> <span class="fn">average_grade</span>(self):
+        <span class="kw">if not</span> self.grades:
+            <span class="kw">return</span> <span class="num">0</span>
+        <span class="kw">return</span> <span class="fn">sum</span>(self.grades) / <span class="fn">len</span>(self.grades)
+
+<span class="cm"># Create objects (instances) from the class</span>
+s1 = <span class="fn">Student</span>(<span class="str">"Denis"</span>, <span class="num">25</span>, <span class="str">"Python Bootcamp"</span>)
+s2 = <span class="fn">Student</span>(<span class="str">"Amina"</span>, <span class="num">22</span>, <span class="str">"Web Design"</span>)
+
+<span class="cm"># Use the objects</span>
+<span class="fn">print</span>(s1.<span class="fn">introduce</span>())
+s1.<span class="fn">add_grade</span>(<span class="num">85</span>)
+s1.<span class="fn">add_grade</span>(<span class="num">92</span>)
+<span class="fn">print</span>(<span class="str">f"Denis's average: {s1.<span class="fn">average_grade</span>()}"</span>)
+          </div>
+
+          <h3>Inheritance — Reusing and Extending Classes</h3>
+          <p>Inheritance lets a new class inherit all the attributes and methods of an existing class, then add or override what it needs. Think of it as: a <code style="color:var(--cyan);font-family:var(--font-mono)">PaidStudent</code> is a <code style="color:var(--cyan);font-family:var(--font-mono)">Student</code> with extra features.</p>
+
+          <div class="code-block">
+            <span class="code-label">python – inheritance</span>
+<span class="kw">class</span> <span class="fn">PaidStudent</span>(<span class="fn">Student</span>):   <span class="cm"># inherits from Student</span>
+    <span class="kw">def</span> <span class="fn">__init__</span>(self, name, age, course, scholarship):
+        <span class="fn">super</span>().__init__(name, age, course)  <span class="cm"># run parent's __init__</span>
+        self.scholarship = scholarship
+
+    <span class="kw">def</span> <span class="fn">introduce</span>(self):  <span class="cm"># override the parent method</span>
+        base = <span class="fn">super</span>().<span class="fn">introduce</span>()
+        <span class="kw">return</span> base + <span class="str">f" (Scholarship: {self.scholarship})"</span>
+
+ps = <span class="fn">PaidStudent</span>(<span class="str">"Brian"</span>, <span class="num">20</span>, <span class="str">"AI Dev"</span>, <span class="str">"Full Ride"</span>)
+<span class="fn">print</span>(ps.<span class="fn">introduce</span>())
+ps.<span class="fn">add_grade</span>(<span class="num">95</span>)   <span class="cm"># inherited from Student – works perfectly</span>
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            In a banking app, you might have a base <code style="color:var(--cyan);font-family:var(--font-mono)">Account</code> class with deposit and withdraw methods. Then <code style="color:var(--cyan);font-family:var(--font-mono)">SavingsAccount</code> and <code style="color:var(--cyan);font-family:var(--font-mono)">LoanAccount</code> inherit from it, each adding their own interest calculation logic. You write the shared code once and extend it — this is how Equity Bank's systems work.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Create a <code style="color:var(--cyan);font-family:var(--font-mono)">Car</code> class with attributes: make, model, year. Add a method <code style="color:var(--cyan);font-family:var(--font-mono)">describe()</code> that prints the car's details</li>
+              <li>Add a method <code style="color:var(--cyan);font-family:var(--font-mono)">age()</code> that returns how old the car is (2026 − year)</li>
+              <li>Create 3 car objects and print their descriptions</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Forgetting <code style="color:#f87171;font-family:var(--font-mono)">self</code> in method definitions:</strong> Every method's first parameter must be <code style="color:var(--cyan);font-family:var(--font-mono)">self</code></li>
+              <li><strong>Forgetting <code style="color:#f87171;font-family:var(--font-mono)">self.</code> when accessing attributes:</strong> Inside a method, always use <code style="color:var(--cyan);font-family:var(--font-mono)">self.name</code>, not just <code style="color:#f87171;font-family:var(--font-mono)">name</code></li>
+              <li><strong>Calling methods without parentheses:</strong> <code style="color:#f87171;font-family:var(--font-mono)">s1.introduce</code> returns the function itself. <code style="color:var(--cyan);font-family:var(--font-mono)">s1.introduce()</code> actually runs it</li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/1XE-_s4ZBT8"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 7</div>
+          <p>Create a class called <code style="color:var(--cyan);font-family:var(--font-mono)">Student</code> with attributes name, age, and course. Add a method <code style="color:var(--cyan);font-family:var(--font-mono)">introduce()</code> that prints their details. Create at least 2 student objects.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task7" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%207%20-%20OOP" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 8 – FLASK -->
+    <div class="module-accordion" id="module-8">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">08</div>
+          <div>
+            <div class="accordion-title">Python for Web Development</div>
+            <div class="accordion-subtitle">Flask · Routes · Templates · Running a Server</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            This is where everything clicks together. Modules 1–7 taught you Python. Now you'll use Python to build actual websites. Flask is the bridge that turns your Python code into a live web application that anyone can open in a browser. This module is the gateway to professional web development.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>What Is Flask?</h3>
+          <p>Flask is a <strong>micro web framework</strong> for Python. "Micro" doesn't mean limited — it means lightweight and flexible. You get the core tools you need to build web apps without a lot of unnecessary overhead. It's the most beginner-friendly way to put your Python skills on the internet.</p>
+
+          <div class="code-block">
+            <span class="code-label">terminal – setup</span>
+<span class="cm"># Step 1: Install Flask</span>
+pip install flask
+
+<span class="cm"># Step 2: Create your project folder</span>
+mkdir my_flask_app
+cd my_flask_app
+
+<span class="cm"># Step 3: Create app.py and run it</span>
+python app.py
+<span class="cm"># Then open: http://127.0.0.1:5000 in your browser</span>
+          </div>
+
+          <h3>Routes — Mapping URLs to Python Functions</h3>
+          <p>Every URL in your app maps to a Python function. The <code style="color:var(--cyan);font-family:var(--font-mono)">@app.route()</code> decorator is what makes the connection. When someone visits that URL, Flask runs the function and sends back whatever it returns.</p>
+
+          <div class="code-block">
+            <span class="code-label">app.py – your first Flask app</span>
+<span class="kw">from</span> flask <span class="kw">import</span> Flask, render_template
+
+app = <span class="fn">Flask</span>(__name__)
+
+<span class="cm"># Route: / → the homepage</span>
+@app.<span class="fn">route</span>(<span class="str">"/"</span>)
+<span class="kw">def</span> <span class="fn">home</span>():
+    <span class="kw">return</span> <span class="str">"&lt;h1&gt;🚀 Welcome to VersaTech Campus!&lt;/h1&gt;&lt;p&gt;Built with Flask.&lt;/p&gt;"</span>
+
+<span class="cm"># Route: /about → about page</span>
+@app.<span class="fn">route</span>(<span class="str">"/about"</span>)
+<span class="kw">def</span> <span class="fn">about</span>():
+    <span class="kw">return</span> <span class="str">"&lt;h1&gt;About VersaTech&lt;/h1&gt;&lt;p&gt;Building Africa's tech future.&lt;/p&gt;"</span>
+
+<span class="cm"># Route: /greet/&lt;name&gt; → dynamic URL with a variable</span>
+@app.<span class="fn">route</span>(<span class="str">"/greet/&lt;name&gt;"</span>)
+<span class="kw">def</span> <span class="fn">greet</span>(name):
+    <span class="kw">return</span> <span class="str">f"&lt;h1&gt;Hello, {name}! 👋&lt;/h1&gt;"</span>
+<span class="cm"># Visit: /greet/Denis → Hello, Denis!</span>
+
+<span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
+    app.<span class="fn">run</span>(debug=<span class="kw">True</span>)  <span class="cm"># debug=True auto-reloads on save</span>
+          </div>
+
+          <h3>Jinja2 Templates — Separating HTML from Python</h3>
+          <p>Returning HTML strings from Python gets messy fast. Templates let you write HTML files separately and inject Python data into them using <code style="color:var(--cyan);font-family:var(--font-mono)">{{ }}</code> and <code style="color:var(--cyan);font-family:var(--font-mono)">{% %}</code> syntax.</p>
+
+          <div class="code-block">
+            <span class="code-label">templates/index.html</span>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome, <span class="str">{{ name }}</span>!&lt;/h1&gt;
+  &lt;ul&gt;
+    <span class="cm">{# Loop through a list passed from Python #}</span>
+    <span class="kw">{% for course in courses %}</span>
+      &lt;li&gt;<span class="str">{{ course }}</span>&lt;/li&gt;
+    <span class="kw">{% endfor %}</span>
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+          </div>
+
+          <div class="code-block">
+            <span class="code-label">app.py – passing data to a template</span>
+@app.<span class="fn">route</span>(<span class="str">"/"</span>)
+<span class="kw">def</span> <span class="fn">home</span>():
+    courses = [<span class="str">"Python Bootcamp"</span>, <span class="str">"Web Design"</span>, <span class="str">"Data Science"</span>]
+    <span class="kw">return</span> <span class="fn">render_template</span>(<span class="str">"index.html"</span>, name=<span class="str">"Denis"</span>, courses=courses)
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When you visit any website built with Python — like Instagram's early version, Pinterest, or Dropbox — a Flask or Django route receives your browser's request, runs a Python function, fetches data from a database, passes it to an HTML template, and sends the final page back to you. You just learned exactly how that works.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Create a Flask app with routes for <code style="color:var(--cyan);font-family:var(--font-mono)">/</code>, <code style="color:var(--cyan);font-family:var(--font-mono)">/about</code>, and <code style="color:var(--cyan);font-family:var(--font-mono)">/contact</code></li>
+              <li>Add a dynamic route <code style="color:var(--cyan);font-family:var(--font-mono)">/user/&lt;username&gt;</code> that shows a personalised greeting</li>
+              <li>Create an HTML template for the homepage and pass your name and a list of hobbies to it</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Templates folder location:</strong> Flask looks for templates in a folder named exactly <code style="color:var(--cyan);font-family:var(--font-mono)">templates</code> (lowercase) in the same directory as app.py</li>
+              <li><strong>Forgetting debug=True:</strong> Without it, you have to restart the server manually every time you change your code</li>
+              <li><strong>Port already in use:</strong> If you get a port error, another instance of your app is running. Close it or change the port: <code style="color:var(--cyan);font-family:var(--font-mono)">app.run(port=5001)</code></li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/Z1RJmh_OqeA"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 8</div>
+          <p>Create a simple Flask app with at least 3 routes: home (/), about (/about), and contact (/contact). Each route should return a different HTML response. Run it and take a screenshot.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task8" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%208%20-%20Flask%20Web%20Development" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 9 – APIs -->
+    <div class="module-accordion" id="module-9">
+      <div class="accordion-header">
+        <div class="accordion-title-group">
+          <div class="accordion-num">09</div>
+          <div>
+            <div class="accordion-title">APIs</div>
+            <div class="accordion-subtitle">REST APIs · JSON · Flask API · requests library</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            APIs are how the modern internet works. Your weather app doesn't store weather data — it calls a weather API. WhatsApp's login connects to an authentication API. M-Pesa integrations are built on payment APIs. Learning to build and consume APIs is what separates hobby coders from professional developers.
+          </div>
+
+          <div class="section-label">Concept Explanation</div>
+          <h3>What Is an API?</h3>
+          <p>An API (Application Programming Interface) is a way for two programs to talk to each other. Your app sends a <strong>request</strong> to an API, and the API sends back a <strong>response</strong> — usually as JSON data. Think of an API like a restaurant waiter: you (the app) place an order, the waiter (API) takes it to the kitchen (server), and brings back your food (data).</p>
+
+          <h3>JSON — The Language of APIs</h3>
+          <p>JSON (JavaScript Object Notation) is the standard format for sending data between systems. It looks like Python dictionaries:</p>
+
+          <div class="code-block">
+            <span class="code-label">python – working with JSON</span>
+<span class="kw">import</span> json
+
+<span class="cm"># A JSON string (what you receive from an API)</span>
+json_data = <span class="str">'{"name": "Denis", "city": "Narok", "score": 91}'</span>
+
+<span class="cm"># Parse JSON → Python dictionary</span>
+data = json.<span class="fn">loads</span>(json_data)
+<span class="fn">print</span>(data[<span class="str">"name"</span>])   <span class="cm"># "Denis"</span>
+
+<span class="cm"># Convert Python dict → JSON string</span>
+student = {<span class="str">"name"</span>: <span class="str">"Amina"</span>, <span class="str">"course"</span>: <span class="str">"AI"</span>}
+json_output = json.<span class="fn">dumps</span>(student, indent=<span class="num">2</span>)
+<span class="fn">print</span>(json_output)
+          </div>
+
+          <h3>Calling External APIs with requests</h3>
+
+          <div class="code-block">
+            <span class="code-label">terminal</span>
+pip install requests
+          </div>
+
+          <div class="code-block">
+            <span class="code-label">python – calling a public API</span>
+<span class="kw">import</span> requests
+
+<span class="cm"># Call a free public API (no key needed)</span>
+response = requests.<span class="fn">get</span>(<span class="str">"https://api.agify.io?name=Denis"</span>)
+
+<span class="kw">if</span> response.status_code == <span class="num">200</span>:   <span class="cm"># 200 means success</span>
+    data = response.<span class="fn">json</span>()          <span class="cm"># parse JSON automatically</span>
+    <span class="fn">print</span>(<span class="str">f"Name: {data['name']}"</span>)
+    <span class="fn">print</span>(<span class="str">f"Predicted age: {data['age']}"</span>)
+<span class="kw">else</span>:
+    <span class="fn">print</span>(<span class="str">f"Error: {response.status_code}"</span>)
+          </div>
+
+          <h3>Building Your Own REST API with Flask</h3>
+
+          <div class="code-block">
+            <span class="code-label">api.py – full CRUD API</span>
+<span class="kw">from</span> flask <span class="kw">import</span> Flask, jsonify, request
+
+app = <span class="fn">Flask</span>(__name__)
+
+<span class="cm"># In-memory data store (a list of dicts)</span>
+students = [
+    {<span class="str">"id"</span>: <span class="num">1</span>, <span class="str">"name"</span>: <span class="str">"Denis"</span>, <span class="str">"course"</span>: <span class="str">"Python"</span>},
+    {<span class="str">"id"</span>: <span class="num">2</span>, <span class="str">"name"</span>: <span class="str">"Amina"</span>, <span class="str">"course"</span>: <span class="str">"Design"</span>},
+]
+
+<span class="cm"># GET /api/students → returns all students</span>
+@app.<span class="fn">route</span>(<span class="str">"/api/students"</span>, methods=[<span class="str">"GET"</span>])
+<span class="kw">def</span> <span class="fn">get_students</span>():
+    <span class="kw">return</span> <span class="fn">jsonify</span>(students)
+
+<span class="cm"># GET /api/students/1 → returns one student</span>
+@app.<span class="fn">route</span>(<span class="str">"/api/students/&lt;int:student_id&gt;"</span>, methods=[<span class="str">"GET"</span>])
+<span class="kw">def</span> <span class="fn">get_student</span>(student_id):
+    student = <span class="fn">next</span>((s <span class="kw">for</span> s <span class="kw">in</span> students <span class="kw">if</span> s[<span class="str">"id"</span>] == student_id), <span class="kw">None</span>)
+    <span class="kw">if not</span> student:
+        <span class="kw">return</span> <span class="fn">jsonify</span>({<span class="str">"error"</span>: <span class="str">"Student not found"</span>}), <span class="num">404</span>
+    <span class="kw">return</span> <span class="fn">jsonify</span>(student)
+
+<span class="cm"># POST /api/students → add a new student</span>
+@app.<span class="fn">route</span>(<span class="str">"/api/students"</span>, methods=[<span class="str">"POST"</span>])
+<span class="kw">def</span> <span class="fn">add_student</span>():
+    new_student = request.<span class="fn">get_json</span>()
+    new_student[<span class="str">"id"</span>] = <span class="fn">len</span>(students) + <span class="num">1</span>
+    students.<span class="fn">append</span>(new_student)
+    <span class="kw">return</span> <span class="fn">jsonify</span>(new_student), <span class="num">201</span>   <span class="cm"># 201 = Created</span>
+
+<span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
+    app.<span class="fn">run</span>(debug=<span class="kw">True</span>)
+          </div>
+
+          <div class="real-world-box">
+            <strong>🌍 Real-World Example</strong>
+            When a developer wants to integrate M-Pesa STK Push (the payment popup on your phone), they call the Safaricom Daraja API. They send a POST request with the phone number and amount, and the API sends back a transaction ID and triggers the payment prompt. You now have the skills to build and consume exactly this kind of system.
+          </div>
+
+          <div class="challenge-box">
+            <strong>⚡ Quick Challenge — Try It Now</strong>
+            <ul>
+              <li>Call the free JSONPlaceholder API: <code style="color:var(--cyan);font-family:var(--font-mono)">https://jsonplaceholder.typicode.com/posts/1</code> and print the title and body</li>
+              <li>Build a Flask API with a <code style="color:var(--cyan);font-family:var(--font-mono)">/api/hello</code> endpoint that returns <code style="color:var(--cyan);font-family:var(--font-mono)">{"message": "Hello from Kenya!"}</code></li>
+              <li>Test your API using a browser and Postman</li>
+            </ul>
+          </div>
+
+          <div class="mistakes-box">
+            <strong>🚫 Common Mistakes to Avoid</strong>
+            <ul>
+              <li><strong>Not checking status_code:</strong> Always check <code style="color:var(--cyan);font-family:var(--font-mono)">response.status_code == 200</code> before using the data</li>
+              <li><strong>Forgetting CORS:</strong> If your frontend (HTML/JS) and backend (Flask) run on different ports, you'll need the <code style="color:var(--cyan);font-family:var(--font-mono)">flask-cors</code> library</li>
+              <li><strong>Wrong HTTP method:</strong> Use GET to retrieve data. Use POST to send data. Mixing them up causes errors</li>
+            </ul>
+          </div>
+
+          <div class="section-label">Watch &amp; Reinforce</div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/GMppyAPbLYk"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg> Task 9</div>
+          <p>Build a Flask API with at least one endpoint that returns JSON data. Try creating a <code style="color:var(--cyan);font-family:var(--font-mono)">/api/hello</code> endpoint that returns <code style="color:var(--cyan);font-family:var(--font-mono)">{"message": "Hello from my API!"}</code>. Test it using a browser or Postman.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Task</a>
+          <a href="https://forms.google.com/vtx-python-task9" target="_blank" class="action-btn submit-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Task</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20need%20a%20recap%20for%20Module%209%20-%20APIs" target="_blank" class="action-btn recap-class"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ask for Live Recap Class</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 10 – FINAL PROJECT -->
+    <div class="module-accordion" id="module-10" style="border-color:rgba(6,182,212,0.25);">
+      <div class="accordion-header" style="background:linear-gradient(135deg,rgba(6,182,212,0.05),rgba(37,99,235,0.05));">
+        <div class="accordion-title-group">
+          <div class="accordion-num" style="background:linear-gradient(135deg,var(--cyan-dim),var(--blue-500));color:#fff;">10</div>
+          <div>
+            <div class="accordion-title" style="background:linear-gradient(135deg,var(--cyan),var(--blue-400));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Final Project 🏆</div>
+            <div class="accordion-subtitle">Build a Full Blog or Portfolio Website using Flask</div>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="lesson-content">
+
+          <div class="why-matters">
+            <strong>⚡ Why This Matters</strong>
+            This is not just a test — it's your first portfolio piece. Every developer has a portfolio. When you apply for a tech job or pitch a client, you show them what you've built. Completing this project means you have something real to show the world. This is where you cross the line from student to builder.
+          </div>
+
+          <div class="section-label">Project Brief</div>
+          <h3>What You'll Build</h3>
+          <p>A complete personal portfolio or blog website powered by Python and Flask, using everything you've learned across all 10 modules. This is a real, deployable web application.</p>
+
+          <ul>
+            <li>At least 3 fully styled HTML pages: Home, About, and Projects/Blog</li>
+            <li>A base template (<code style="color:var(--cyan);font-family:var(--font-mono)">base.html</code>) with shared navigation and footer using Jinja2 template inheritance</li>
+            <li>At least one dynamic route (e.g., individual project or blog post pages)</li>
+            <li>At least one form — a contact form or a comment section</li>
+            <li>Data stored in a Python list/dict, a JSON file, or SQLite database</li>
+            <li>A REST API endpoint that returns JSON (e.g., <code style="color:var(--cyan);font-family:var(--font-mono)">/api/projects</code>)</li>
+            <li>Custom CSS styling for a professional appearance</li>
+          </ul>
+
+          <div class="section-label">Starter Structure</div>
+          <div class="code-block">
+            <span class="code-label">project folder structure</span>
+my_portfolio/ <br>
+├── app.py                  <span class="cm"># Flask application</span> <br>
+├── requirements.txt        <span class="cm"># pip freeze > requirements.txt</span> <br>
+├── README.txt              <span class="cm"># how to run your project</span> <br>
+├── templates/ <br>
+│   ├── base.html           <span class="cm"># shared layout</span> <br>
+│   ├── index.html          <span class="cm"># homepage</span> <br>
+│   ├── about.html          <span class="cm"># about you</span><br>
+│   ├── projects.html       <span class="cm"># project list</span><br>
+│   └── project_detail.html <span class="cm"># single project view</span> <br>
+└── static/<br>
+    ├── css/<br>
+    │   └── style.css<br>
+    └── images/<br>
+          </div>
+
+          <div class="code-block">
+            <span class="code-label">app.py – starter with API endpoint</span>
+<span class="kw">from</span> flask <span class="kw">import</span> Flask, render_template, jsonify
+
+app = <span class="fn">Flask</span>(__name__)
+
+projects = [
+    {
+        <span class="str">"id"</span>: <span class="num">1</span>, <br>
+        <span class="str">"title"</span>: <span class="str">"Portfolio Site"</span>,<br>
+        <span class="str">"description"</span>: <span class="str">"My first Flask application"</span>,<br>
+        <span class="str">"tech"</span>: [<span class="str">"Python"</span>, <span class="str">"Flask"</span>, <span class="str">"HTML"</span>, <span class="str">"CSS"</span>]<br>
+    },<br>
+    {
+        <span class="str">"id"</span>: <span class="num">2</span>,
+        <span class="str">"title"</span>: <span class="str">"Student API"</span>,
+        <span class="str">"description"</span>: <span class="str">"REST API built in Module 9"</span>,
+        <span class="str">"tech"</span>: [<span class="str">"Python"</span>, <span class="str">"Flask"</span>, <span class="str">"JSON"</span>]
+    },
+]
+<br>
+@app.<span class="fn">route</span>(<span class="str">"/"</span>)
+<span class="kw">def</span> <span class="fn">home</span>():
+    <span class="kw">return</span> <span class="fn">render_template</span>(<span class="str">"index.html"</span>, name=<span class="str">"Denis"</span>)
+<br>
+@app.<span class="fn">route</span>(<span class="str">"/projects"</span>)
+<span class="kw">def</span> <span class="fn">project_list</span>():
+    <span class="kw">return</span> <span class="fn">render_template</span>(<span class="str">"projects.html"</span>, projects=projects)
+<br>
+@app.<span class="fn">route</span>(<span class="str">"/projects/&lt;int:project_id&gt;"</span>)
+<span class="kw">def</span> <span class="fn">project_detail</span>(project_id):
+    project = <span class="fn">next</span>((p <span class="kw">for</span> p <span class="kw">in</span> projects <span class="kw">if</span> p[<span class="str">"id"</span>] == project_id), <span class="kw">None</span>)
+    <span class="kw">if not</span> project:
+        <span class="kw">return</span> <span class="str">"Project not found"</span>, <span class="num">404</span>
+    <span class="kw">return</span> <span class="fn">render_template</span>(<span class="str">"project_detail.html"</span>, project=project)
+<br>
+<span class="cm"># Bonus: API endpoint</span>
+@app.<span class="fn">route</span>(<span class="str">"/api/projects"</span>)
+<span class="kw">def</span> <span class="fn">api_projects</span>():
+    <span class="kw">return</span> <span class="fn">jsonify</span>(projects)
+<br>
+<span class="kw">if</span> __name__ == <span class="str">"__main__"</span>:
+    app.<span class="fn">run</span>(debug=<span class="kw">True</span>)
+          </div>
+
+          <div class="section-label">Grading Rubric</div>
+          <ul>
+            <li>✅ <strong>Functionality (40%)</strong> — All routes work, templates render, no crashes</li>
+            <li>✅ <strong>Code Quality (25%)</strong> — Clean, readable code with comments and functions</li>
+            <li>✅ <strong>Design (20%)</strong> — CSS styling, professional layout, mobile-friendly</li>
+            <li>✅ <strong>Completeness (15%)</strong> — README, requirements.txt, all required pages present</li>
+          </ul>
+
+          <h3>Submission Requirements</h3>
+          <ul>
+            <li>ZIP your complete project folder and upload via the Submit Task form</li>
+            <li>Include a <code style="color:var(--cyan);font-family:var(--font-mono)">README.txt</code> explaining what you built and how to run it</li>
+            <li>Record a short 2–3 minute video walking through your project (screen recording is fine)</li>
+            <li><strong>Optional Bonus:</strong> Deploy on PythonAnywhere or Render (free) and submit the live URL</li>
+          </ul>
+
+          <div class="real-world-box">
+            <strong>🌍 After Completion</strong>
+            Once you finish this project, you will have a deployed Python web application to add to your CV, LinkedIn, and GitHub. You'll be able to say: "I built a full-stack web application using Python and Flask." That is a marketable, professional skill.
+          </div>
+        </div>
+
+        <div class="video-container">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/jQjjqEjZK58"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="task-card" style="background:rgba(6,182,212,0.08);border-color:rgba(6,182,212,0.3);">
+          <div class="task-label"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Final Project</div>
+          <p>Build a complete blog or portfolio website using Python Flask. Implement all concepts from Modules 1–9. Submit your ZIP file and a short video walkthrough of your project.</p>
+        </div>
+
+        <div class="module-actions">
+          <a href="#" class="action-btn view-task"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>View Project Brief</a>
+          <a href="https://forms.google.com/vtx-python-final" target="_blank" class="action-btn submit-task" style="background:rgba(6,182,212,0.15);border-color:rgba(6,182,212,0.4);color:var(--cyan);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>Submit Final Project</a>
+          <a href="https://wa.me/254712165017?text=Hello%20I%20have%20completed%20the%20Python%20Bootcamp%20Final%20Project%20and%20need%20a%20review" target="_blank" class="action-btn recap-class">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Request Project Review</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPLETION MESSAGE -->
+    <div style="margin-top:48px;padding:32px;background:linear-gradient(135deg,rgba(6,182,212,0.08),rgba(37,99,235,0.08));border:1px solid rgba(6,182,212,0.2);border-radius:16px;text-align:center;">
+      <div style="font-size:32px;margin-bottom:12px;">🎓</div>
+      <h3 style="font-family:var(--font-display);font-size:22px;font-weight:700;margin-bottom:8px;">Complete All 10 Modules</h3>
+      <p style="color:var(--text-secondary);font-size:15px;max-width:440px;margin:0 auto 20px;line-height:1.6;">Submit all your tasks and your final project to earn your VersaTech Python Web Development Certificate.</p>
+      <a href="https://wa.me/254712165017?text=Hello%20I%20have%20completed%20all%20modules%20in%20the%20Python%20Bootcamp" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--blue-500),var(--cyan-dim));color:#fff;padding:12px 24px;border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;transition:all 0.3s;">
+        🏆 Claim Your Certificate
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<script src="../../js/modules.js"></script>
+<script>
+  function viewTask(num) {
+    const card = document.querySelector(`#module-${num} .task-card`);
+    if (card) {
+      card.style.borderColor = 'rgba(6,182,212,0.6)';
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => card.style.borderColor = '', 2000);
+    }
+  }
+</script>
+</body>
+</html>
